@@ -15,13 +15,13 @@
         >
             <v-list-item>
                 <v-list-item-avatar>
-                    <img src="https://randomuser.me/api/portraits/men/1.jpg">
+                    <img src="https://randomuser.me/api/portraits/women/10.jpg">
                 </v-list-item-avatar>
             </v-list-item>
             
             <v-list-item-content class="text-left">
                 <v-list-item-title class="font-weight-black">SocialLink</v-list-item-title>
-                <v-list-item-subtitle>Иван Иванов</v-list-item-subtitle>
+                <v-list-item-subtitle>Vickie Torres</v-list-item-subtitle>
             </v-list-item-content>
             <v-divider class="my-3"></v-divider>
         </v-list>
@@ -79,3 +79,11 @@ export default {
   }),
 };
 </script>
+
+
+<style>
+    h2 {
+        font-weight: normal;
+        margin-top: 30px;
+    }
+</style>
