@@ -24,24 +24,23 @@
                 <v-list-item-subtitle>Vickie Torres</v-list-item-subtitle>
             </v-list-item-content>
             <v-divider class="my-3"></v-divider>
-        </v-list>
         
-        <v-list-item>
+        <v-list-item link :to="Home">
             <v-link-item-icon>
                 <v-icon>mdi-home-outline</v-icon>
             </v-link-item-icon>
             
             <v-list-item-content>
-                <v-list-item-title class="text-left">Главная</v-list-item-title>
+                <v-list-item-title class="text-left mar">Главная</v-list-item-title>
             </v-list-item-content>
         </v-list-item>
-        <v-list-item>
+        <v-list-item link :to="User1">
             <v-link-item-icon>
                 <v-icon>mdi-account</v-icon>
             </v-link-item-icon>
             
             <v-list-item-content>
-                <v-list-item-title class="text-left">Мой профиль</v-list-item-title>
+                <v-list-item-title class="text-left mar">Мой профиль</v-list-item-title>
             </v-list-item-content>
         </v-list-item>
         <v-list-item>
@@ -50,10 +49,10 @@
             </v-link-item-icon>
             
             <v-list-item-content>
-                <v-list-item-title class="text-left">Найти друзей</v-list-item-title>
+                <v-list-item-title class="text-left mar">Найти друзей</v-list-item-title>
             </v-list-item-content>
         </v-list-item>
-        
+        </v-list>
         </v-navigation-drawer>
         
          <v-content class="px-12 py-3">
@@ -85,5 +84,8 @@ export default {
     h2 {
         font-weight: normal;
         margin-top: 30px;
+    }
+    .mar {
+        margin-left: 10px;
     }
 </style>
