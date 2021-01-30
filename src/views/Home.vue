@@ -22,7 +22,7 @@
         width: 500px;
         background-size: cover;
     }
-    p {
+    .flex > p {
         height: 300px;
         width: 40%;
         margin-left: 50px;
@@ -31,6 +31,6 @@
         color: #4CAF50;
     }
     h1 {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 </style>

@@ -29,6 +29,23 @@
         </v-row>
         <v-divider></v-divider>
         <h2>Posts</h2>
+        <v-container>
+        <v-row>
+          <v-col v-for="i in post"
+            :key="i"
+            cols="10">
+            <v-card>
+                <div class="postsHead">
+                <v-avatar size="56">
+                  <img class="avatar" alt="user" src="https://randomuser.me/api/portraits/men/10.jpg">
+                </v-avatar>
+                <v-card-title>{{i.title}}</v-card-title>
+                </div>
+                <v-card-text>{{i.body}}</v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
   </div>
 </template>
 
@@ -38,7 +55,8 @@ export default {
         name: 'User1',
         data() {
             return {
-                dat: {}
+                dat: {},
+                post: {}
             }
         },
         methods: {
@@ -46,10 +64,24 @@ export default {
                 this.axios
                 .get("http://jsonplaceholder.typicode.com/users/1")
                 .then((response) => {this.dat = response.data})
-            }
+            },
+            getUserPost() {
+                this.axios
+                .get("http://jsonplaceholder.typicode.com/posts?userId=1")
+                .then((response) => {this.post = response.data})
+            },
         },
         mounted() {
             this.getUser();
+            this.getUserPost();
         }
     }
 </script>
+
+
+<style>
+    .postsHead {
+        padding: 10px;
+        display: flex;
+    }
+</style>
