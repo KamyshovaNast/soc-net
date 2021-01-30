@@ -15,17 +15,17 @@
         >
             <v-list-item>
                 <v-list-item-avatar>
-                    <img src="https://randomuser.me/api/portraits/women/10.jpg">
+                    <img src="https://randomuser.me/api/portraits/men/10.jpg">
                 </v-list-item-avatar>
             </v-list-item>
             
             <v-list-item-content class="text-left">
                 <v-list-item-title class="font-weight-black">SocialLink</v-list-item-title>
-                <v-list-item-subtitle>Vickie Torres</v-list-item-subtitle>
+                <v-list-item-subtitle>Leanne Graham</v-list-item-subtitle>
             </v-list-item-content>
             <v-divider class="my-3"></v-divider>
         
-        <v-list-item link :to="Home">
+        <v-list-item link to="/">
             <v-link-item-icon>
                 <v-icon>mdi-home-outline</v-icon>
             </v-link-item-icon>
@@ -34,7 +34,7 @@
                 <v-list-item-title class="text-left mar">Главная</v-list-item-title>
             </v-list-item-content>
         </v-list-item>
-        <v-list-item link :to="User1">
+        <v-list-item link to="/users/1">
             <v-link-item-icon>
                 <v-icon>mdi-account</v-icon>
             </v-link-item-icon>
@@ -43,7 +43,7 @@
                 <v-list-item-title class="text-left mar">Мой профиль</v-list-item-title>
             </v-list-item-content>
         </v-list-item>
-        <v-list-item>
+        <v-list-item link to="/users/1">
             <v-link-item-icon>
                 <v-icon>mdi-account-multiple-plus-outline</v-icon>
             </v-link-item-icon>
@@ -65,13 +65,15 @@
 </template>
 
 <script>
+//import Home from '../views/Home.vue'
+//import User1 from '../views/Home.vue'
 
 export default {
   name: 'App',
 
-  components: {
-    
-  },
+  /* components: {
+      Home, User1
+  }, */
 
   data: () => ({
     //
