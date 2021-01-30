@@ -77,6 +77,12 @@ export default {
         mounted() {
             this.getUser();
             this.getUserPost();
+        },
+        watch: {
+            $route() {
+                this.getUser(),
+                this.getUserPost();
+            }
         }
     }
 </script>

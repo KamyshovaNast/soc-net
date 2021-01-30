@@ -25,7 +25,7 @@
             </v-list-item-content>
             <v-divider class="my-3"></v-divider>
         
-        <v-list-item link to="/">
+        <v-list-item link to="/" exact>
             <v-link-item-icon>
                 <v-icon>mdi-home-outline</v-icon>
             </v-link-item-icon>
@@ -34,7 +34,7 @@
                 <v-list-item-title class="text-left mar">Главная</v-list-item-title>
             </v-list-item-content>
         </v-list-item>
-        <v-list-item link to="/users/1">
+        <v-list-item link to="/users/1" exact>
             <v-link-item-icon>
                 <v-icon>mdi-account</v-icon>
             </v-link-item-icon>
@@ -43,7 +43,7 @@
                 <v-list-item-title class="text-left mar">Мой профиль</v-list-item-title>
             </v-list-item-content>
         </v-list-item>
-        <v-list-item link to="/users/1">
+        <v-list-item link to="/users" exact>
             <v-link-item-icon>
                 <v-icon>mdi-account-multiple-plus-outline</v-icon>
             </v-link-item-icon>
