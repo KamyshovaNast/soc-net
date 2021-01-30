@@ -39,7 +39,10 @@
                 <v-avatar size="56">
                   <img class="avatar" alt="user" src="https://randomuser.me/api/portraits/men/10.jpg">
                 </v-avatar>
-                <v-card-title>{{i.title}}</v-card-title>
+                <div class="titl">
+                    <v-card-title>{{i.title}}</v-card-title>
+                    <v-card-subtitle>Author: {{dat.name}}</v-card-subtitle>
+                </div>
                 </div>
                 <v-card-text>{{i.body}}</v-card-text>
             </v-card>
@@ -83,5 +86,8 @@ export default {
     .postsHead {
         padding: 10px;
         display: flex;
+    }
+    .titl {
+        margin-top: -16px!important;
     }
 </style>
