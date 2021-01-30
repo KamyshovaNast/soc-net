@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="users">
     <v-container>
         <v-row>
           <v-col v-for="i in users"
@@ -15,7 +15,7 @@
                     <v-card-subtitle>{{i.address.city}}</v-card-subtitle>
                 </div>
                 </div>
-                <v-card-actions><router-link to="'/users/' + i.id">Go to profile</router-link></v-card-actions>
+                <v-card-actions><router-link v-bind:to="'/users/' + i.id">Go to profile</router-link></v-card-actions>
             </v-card>
           </v-col>
         </v-row>

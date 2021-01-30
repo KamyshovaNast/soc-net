@@ -15,7 +15,7 @@
         >
             <v-list-item>
                 <v-list-item-avatar>
-                    <img src="https://randomuser.me/api/portraits/men/10.jpg">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg">
                 </v-list-item-avatar>
             </v-list-item>
             
@@ -65,15 +65,9 @@
 </template>
 
 <script>
-//import Home from '../views/Home.vue'
-//import User1 from '../views/Home.vue'
 
 export default {
   name: 'App',
-
-  /* components: {
-      Home, User1
-  }, */
 
   data: () => ({
     //

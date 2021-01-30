@@ -10,7 +10,7 @@
         </v-row>
         <v-row class="text-left">
             <v-col cols="2">
-                <img src="https://randomuser.me/api/portraits/men/1.jpg" style="max-width: 100%">
+                <img src="https://randomuser.me/api/portraits/men/6.jpg" style="max-width: 100%">
             </v-col>
             <v-col cols="10" class="text-left">
                 <p>
@@ -37,7 +37,7 @@
             <v-card>
                 <div class="postsHead">
                 <v-avatar size="56">
-                  <img class="avatar" alt="user" src="https://randomuser.me/api/portraits/men/1.jpg">
+                  <img class="avatar" alt="user" src="https://randomuser.me/api/portraits/men/6.jpg">
                 </v-avatar>
                 <div class="titl">
                     <v-card-title>{{i.title}}</v-card-title>
@@ -55,7 +55,7 @@
 <script>
 // @ is an alias to /src
 export default {
-        name: 'User1',
+        name: 'User2',
         data() {
             return {
                 dat: {},
@@ -65,12 +65,12 @@ export default {
         methods: {
             getUser() {
                 this.axios
-                .get("http://jsonplaceholder.typicode.com/users/1")
+                .get("http://jsonplaceholder.typicode.com/users/6")
                 .then((response) => {this.dat = response.data})
             },
             getUserPost() {
                 this.axios
-                .get("http://jsonplaceholder.typicode.com/posts?userId=1")
+                .get("http://jsonplaceholder.typicode.com/posts?userId=6")
                 .then((response) => {this.post = response.data})
             },
         },
